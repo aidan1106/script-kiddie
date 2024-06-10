@@ -26,7 +26,7 @@
                 @auth
                     <div class="flex items-center">
                         @if (Auth::user()->avatar)
-                            <img src="{{ asset('storage/' . Auth::user()->avatar) }}" alt="Avatar" class="rounded-full w-8 h-8 object-cover mr-2">
+                            <img src="{{ asset('storage/' . Auth::user()->avatar) }}" alt="Avatar" class="rounded-full w-20 h-20 object-cover">
                         @else
                             <img src="https://www.gravatar.com/avatar/{{ md5(strtolower(trim(Auth::user()->email))) }}?d=identicon&s=32" alt="Avatar" class="rounded-full w-8 h-8 object-cover mr-2">
                         @endif
